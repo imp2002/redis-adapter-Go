@@ -24,7 +24,7 @@ func main() {
 	//a := redisadapter.NewAdapterWithPassword("tcp", "127.0.0.1:6379", "123")
 
 	// Use the following if you use Redis with a specific user 
-	// a := NewAdapterWithUser("tcp", "127.0.0.1:6379", "testaccount", "userpass")
+	// a := redisadapter.NewAdapterWithUser("tcp", "127.0.0.1:6379", "username", "password")
 
 	e := casbin.NewEnforcer("examples/rbac_model.conf", a)
 
